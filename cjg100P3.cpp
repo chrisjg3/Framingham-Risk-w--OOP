@@ -1,11 +1,10 @@
-
 /*
-* cjg100P3.cpp
+* cjg100P2.cpp
 *
 * COSC 051 2020
+* Project
 *
-*
-* Due on: June 25th, 2020
+* Due on: June 14th, 2020
 * Author: Christopher Joseph Gallo
 *
 *
@@ -16,10 +15,10 @@
 *
 * References not otherwise commented within the program source code.
 * Note that you should not mention any help from the TAs, the professor,
-* or any code taken.
+* or any code taken from the class textbooks.
 */
 
-// Import Section
+// Imports:
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -30,15 +29,31 @@
 
 using namespace std;
 
-// Function Prototypes:
+
+// Begining Class Defintion:
+class FactorSet
+{
+    private:
+    // Defining the risk factor variables as attribites
+    char gender;
+    double Age;
+    double Chole;
+    double hdl;
+    double sbp;
+    char hyperTest;
+    char smoker;
+
+    //
+    public:
+    int getRiskFactor();
+    
+    
+};
 
 
 
-// Beginning of Main Function:
 int main()
 {
-
-
 
     return 0;
 }
