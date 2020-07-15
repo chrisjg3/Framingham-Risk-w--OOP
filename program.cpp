@@ -266,8 +266,6 @@ void NodeList::addToList(char inputGen, int inputAge, double inputChole, double 
         // This then sets the 'next' variable euqal to a new factorset pointer, thus having
         // the list extended, as the last factorset now points to another one.
         last->next = new FactorSet(inputGen, inputAge, inputChole, inputHDL, inputSBP, inputHyperTest, inputSmoker);
-        last = nullptr;
-        delete last;
     }
 
 }
