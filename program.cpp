@@ -198,6 +198,9 @@ class NodeList
     // Default constructor marks head as NULL to mark new list.
     NodeList()      { head = NULL; }
 
+    // Destructor
+    ~NodeList();
+
     // Function to add to the linked list of FactorSet.
     void addToList(char inputGen, int inputAge, double inputChole, double inputHDL, double inputSBP, char inputHyperTest, char inputSmoker);
 
@@ -210,6 +213,34 @@ class NodeList
     // Upload from file function
     void uploadFile(string fileName, NodeList &list);
 };
+
+NodeList::~NodeList()
+{
+    // Deleting Dynamically Allocated Memory
+    if (head == NULL)
+    {
+        // Nothing Needs Deleting
+    }
+    else 
+    {
+        // Set up two pointers to help delete all the dynamic memory
+        FactorSet* last = head->next;
+        FactorSet* previousPtr = head;
+        // While last is not null (at the end of the list):
+        while (last != NULL)
+        {
+            // Delete the pointer before last
+            delete previousPtr;
+            // Set that now equal to last (the next pointer)
+            previousPtr = last;
+            // Move last down the list
+            last = last->next;
+        }
+        // Once last is null, then the previous pointer is the last item
+        // And so just need to delete that last one
+        delete previousPtr;
+    }
+}
 
 //Function for printing out factor sets. (Uses Overloaded Ostream Operator)
 void NodeList::printAll()
