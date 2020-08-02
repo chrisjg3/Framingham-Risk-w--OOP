@@ -1,4 +1,8 @@
-# Framingham-Risk-w--OOP
-This is a project inspired by some of my C++ coursework.  I am going to create a simple Heart Disease Risk Calculator Program, using OOP.
+# Framingham-Risk-w--OOP  (Complete!)
 
-A lot of this is worked on and upploaded at the finish, so won't have much of a version history.
+## Quick Intro and Current Notes
+This is a project inspired by some of my C++ coursework.  I am going to create a simple Heart Disease Risk Calculator Program, using OOP. 
+
+It is currently finished, however, my skills have greatly increased since completing this project, and so some of my more recent projects or CS052 coursework is more indicative of my abilities.
+
+However, I still think there are a lot of well done coding in this project and I think it does show a good amount of my abilities.
